@@ -10,7 +10,7 @@ This repository contains real-world projects and implementations covering essent
 
 | Project | Description | Status |
 |---------|-------------|--------|
-| 🐧 **Linux & Shell Scripting** | Foundation - Bash scripting, system administration, and automation | 📝 Planned |
+| 🐧 **Linux & Shell Scripting** | Foundation - Bash scripting, system administration, and automation | ✅ Completed |
 | 🐳 **Docker Projects** | Containerization fundamentals, multi-stage builds, and Docker orchestration | 🔄 In Progress |
 | ☁️ **Cloud Projects (AWS)** | EC2, S3, VPC, IAM, and cloud infrastructure basics | 📝 Planned |
 | 🏗️ **Terraform Projects** | Infrastructure as Code (IaC) for cloud resources | 📝 Planned |

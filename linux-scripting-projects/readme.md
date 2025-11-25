@@ -9,7 +9,7 @@ A hands-on collection of Bash scripting projects covering essential Linux admini
 ## 📋 Projects Overview
 
 ### 1. 📊 **system-monitor**
-**Status:** 📝 Planned | **Level:** 🟢 Beginner
+**Status:** ✅ Completed | **Level:** 🟢 Beginner
 
 Real-time system monitoring and reporting script that tracks CPU, memory, disk usage, and running processes. Generates formatted reports for system health analysis.
 
@@ -22,7 +22,7 @@ Real-time system monitoring and reporting script that tracks CPU, memory, disk u
 ---
 
 ### 2. 🗄️ **automated-backup**
-**Status:** 📝 Planned | **Level:** 🟡 Beginner-Intermediate
+**Status:** ✅ Completed | **Level:** 🟡 Beginner-Intermediate
 
 Automated backup and restore solution with compression, incremental backups, and scheduled execution using cron jobs.
 
@@ -36,7 +36,7 @@ Automated backup and restore solution with compression, incremental backups, and
 ---
 
 ### 3. 🔍 **log-analyzer**
-**Status:** 📝 Planned | **Level:** 🟡 Intermediate
+**Status:** ✅ Completed | **Level:** 🟡 Intermediate
 
 Log parsing and analysis tool with pattern matching, error detection, and automated alerting system for critical events.
 
@@ -49,8 +49,8 @@ Log parsing and analysis tool with pattern matching, error detection, and automa
 
 ---
 
-### 4. 👥 **service-manager**
-**Status:** 📝 Planned | **Level:** 🔴 Intermediate-Advanced
+### 4. ⚙️ **service-manager**
+**Status:** ✅ Completed | **Level:** 🟠 Intermediate-Advanced
 
 User and service management automation including user provisioning, service health checks, and automated service recovery.
 
@@ -64,7 +64,7 @@ User and service management automation including user provisioning, service heal
 ---
 
 ### 5. 🚀 **deployment-automation**
-**Status:** 📝 Planned | **Level:** 🔴 Advanced
+**Status:** ✅ Completed | **Level:** 🔴 Advanced
 
 Multi-server deployment automation script using SSH for remote execution, configuration deployment, and rollback capabilities.
 

@@ -4,19 +4,7 @@ A hands-on collection of Docker projects covering containerization, orchestratio
 
 ## 📋 Projects Overview
 
-### 1. 🚀 **springboot-backend**
-**Status:** ✅ Completed | **Level:** Intermediate
-
-Backend application built with Spring Boot and containerized for seamless deployment. Demonstrates Java application containerization with multi-stage builds.
-
-**What you'll learn:**
-- Multi-stage Docker builds
-- Spring Boot containerization
-- Java application optimization
-
----
-
-### 2. ⚛️ **react-frontend**
+### 1. ⚛️ **react-frontend**
 **Status:** 🔄 In Progress | **Level:** Beginner
 
 Modern React application packaged as a Docker container. Shows how to containerize frontend applications with optimized production builds.
@@ -28,7 +16,7 @@ Modern React application packaged as a Docker container. Shows how to containeri
 
 ---
 
-### 3. 🗄️ **mysql-db**
+### 2. 🗄️ **mysql-db**
 **Status:** 📝 Planned | **Level:** Beginner
 
 MySQL database container setup with persistent storage and configuration management. Covers database containerization and data persistence strategies.
@@ -37,6 +25,18 @@ MySQL database container setup with persistent storage and configuration managem
 - Database containerization
 - Volume management
 - Data persistence strategies
+
+---
+
+### 3. 🚀 **springboot-backend**
+**Status:** ✅ Completed | **Level:** Intermediate
+
+Backend application built with Spring Boot and containerized for seamless deployment. Demonstrates Java application containerization with multi-stage builds.
+
+**What you'll learn:**
+- Multi-stage Docker builds
+- Spring Boot containerization
+- Java application optimization
 
 ---
 
@@ -52,19 +52,7 @@ Apache Tomcat application server running in Docker. Demonstrates how to deploy a
 
 ---
 
-### 5. ☸️ **k8s-manifests**
-**Status:** 📝 Planned | **Level:** Advanced
-
-Kubernetes deployment manifests and configurations. Bridges Docker containers to Kubernetes orchestration with deployment, service, and ingress configurations.
-
-**What you'll learn:**
-- Kubernetes basics
-- Deployment strategies
-- Service configurations
-
----
-
-### 6. 🖼️ **docker-images**
+### 5. 🖼️ **docker-images**
 **Status:** 📝 Planned | **Level:** Intermediate
 
 Custom Docker image creation and optimization techniques. Explores Dockerfile best practices, layer optimization, and image security.
@@ -73,6 +61,19 @@ Custom Docker image creation and optimization techniques. Explores Dockerfile be
 - Dockerfile best practices
 - Image layer optimization
 - Security hardening
+
+---
+
+### 6. 🔧 **multi-container-webapp**
+**Status:** ✅ Completed | **Level:** Advanced
+
+Full-stack web application with multiple containerized services (frontend, backend, database) orchestrated using Docker Compose.
+
+**What you'll learn:**
+- Multi-container orchestration
+- Service networking and communication
+- Docker Compose best practices
+- Environment configuration management
 
 ---
 
@@ -100,7 +101,19 @@ Ingress controller setup for managing external access to services. Demonstrates 
 
 ---
 
-### 9. 📊 **monitoring-stack**
+### 9. ☸️ **k8s-manifests**
+**Status:** 📝 Planned | **Level:** Advanced
+
+Kubernetes deployment manifests and configurations. Bridges Docker containers to Kubernetes orchestration with deployment, service, and ingress configurations.
+
+**What you'll learn:**
+- Kubernetes basics
+- Deployment strategies
+- Service configurations
+
+---
+
+### 10. 📊 **monitoring-stack**
 **Status:** 📝 Planned | **Level:** Advanced
 
 Complete monitoring solution using containerized tools. Implements observability with metrics collection, visualization, and alerting.
@@ -112,26 +125,14 @@ Complete monitoring solution using containerized tools. Implements observability
 
 ---
 
-### 10. 🔧 **microservices-demo**
-**Status:** 📝 Planned | **Level:** Advanced
-
-Full-stack microservices architecture with multiple containerized services communicating together.
-
-**What you'll learn:**
-- Microservices patterns
-- Service communication
-- Docker Compose orchestration
-
----
-
 ## 🎯 Getting Started
 
 Each project folder contains its own README with specific instructions, prerequisites, and implementation details. Navigate to any project to explore the code, configuration files, and documentation.
 
 **Recommended Learning Path:**
-1. Start with **react-frontend** or **mysql-db** (Beginner)
-2. Move to **springboot-backend** or **tomcat-server** (Intermediate)
-3. Advance to **k8s-manifests** and **monitoring-stack** (Advanced)
+1. Start with **react-frontend** and **mysql-db** (Beginner)
+2. Move to **springboot-backend**, **tomcat-server**, and **docker-images** (Intermediate)
+3. Advance to **multi-container-webapp**, **config-secrets**, **ingress-controller**, **k8s-manifests**, and **monitoring-stack** (Advanced)
 
 ## 💡 Purpose
 

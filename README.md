@@ -10,13 +10,15 @@ This repository contains real-world projects and implementations covering essent
 
 | Project | Description | Status |
 |---------|-------------|--------|
+| 🐧 **Linux & Shell Scripting** | Foundation - Bash scripting, system administration, and automation | 📝 Planned |
 | 🐳 **Docker Projects** | Containerization fundamentals, multi-stage builds, and Docker orchestration | 🔄 In Progress |
-| 🔄 **CI/CD Projects** | Automated build, test, and deployment pipelines | 📝 Planned |
-| ☸️ **Kubernetes Projects** | Container orchestration, deployments, and cluster management | 📝 Planned |
+| ☁️ **Cloud Projects (AWS)** | EC2, S3, VPC, IAM, and cloud infrastructure basics | 📝 Planned |
 | 🏗️ **Terraform Projects** | Infrastructure as Code (IaC) for cloud resources | 📝 Planned |
 | 📋 **Ansible Projects** | Configuration management and automation | 📝 Planned |
-| 📊 **Prometheus Projects** | Monitoring, metrics, and observability | 📝 Planned |
+| ☸️ **Kubernetes Projects** | Container orchestration, deployments, and cluster management | 📝 Planned |
 | 🔧 **Jenkins Projects** | Continuous integration and delivery automation | 📝 Planned |
+| 🔄 **CI/CD Projects** | Modern pipelines with GitHub Actions and GitLab CI | 📝 Planned |
+| 📊 **Prometheus & Grafana** | Monitoring, metrics, and observability | 📝 Planned |
 
 ## 💡 Purpose
 
@@ -24,16 +26,23 @@ This repository documents the journey of learning DevOps engineering through pra
 
 ## 🎯 Getting Started
 
-Navigate to any project folder to find specific instructions, prerequisites, and implementation details. Each project stands independently and can be explored in any order based on your learning goals.
+Navigate to any project folder to find specific instructions, prerequisites, and implementation details. Each project is self-contained and can be explored independently based on your learning goals or current needs.
 
-**Recommended Learning Path:**
-1. 🐳 Start with **Docker Projects** to understand containerization
-2. ☸️ Move to **Kubernetes Projects** for orchestration
-3. 🏗️ Learn **Terraform** for infrastructure provisioning
-4. 🔄 Implement **CI/CD pipelines** for automation
-5. 📋 Add **Ansible** for configuration management
-6. 📊 Set up **Monitoring** with Prometheus
-7. 🔧 Master **Jenkins** for enterprise CI/CD
+**📚 Recommended Learning Path:**
+
+This path represents a logical progression from fundamentals to advanced topics:
+
+1. 🐧 **Linux & Shell Scripting** - Master the terminal and automation basics
+2. 🐳 **Docker Projects** - Understand containerization
+3. ☁️ **Cloud Projects** - Learn cloud infrastructure (AWS/Azure/GCP)
+4. 🏗️ **Terraform** - Automate infrastructure provisioning
+5. 📋 **Ansible** - Configuration management and automation
+6. ☸️ **Kubernetes** - Container orchestration at scale
+7. 🔧 **Jenkins** - Traditional CI/CD pipelines
+8. 🔄 **CI/CD Projects** - Modern pipeline automation
+9. 📊 **Prometheus & Grafana** - Monitoring and observability
+
+> 💡 **Note**: While this path shows a logical DevOps workflow, each project stands independently. Feel free to jump to topics based on your immediate needs, interests, or job requirements!
 
 ---
 

@@ -54,14 +54,15 @@ Apache Tomcat application server running in Docker. Demonstrates how to deploy a
 ---
 
 ### 5. 🖼️ **docker-images**
-**Status:** 📝 Planned | **Level:** Intermediate
+**Status:** ✅ Completed | **Level:** Intermediate
 
-Custom Docker image creation and optimization techniques. Explores Dockerfile best practices, layer optimization, and image security.
+Production-ready Node.js app with security hardening and multi-stage builds. Demonstrates Docker best practices, image optimization, and security features.
 
 **What you'll learn:**
-- Dockerfile best practices
-- Image layer optimization
-- Security hardening
+- Multi-stage Docker builds
+- Image optimization techniques
+- Security best practices (non-root, Alpine)
+- Healthchecks and layer caching
 
 ---
 
@@ -79,14 +80,15 @@ Full-stack web application with multiple containerized services (frontend, backe
 ---
 
 ### 7. 🔐 **config-secrets**
-**Status:** 📝 Planned | **Level:** Advanced
+**Status:** ✅ Completed | **Level:** Advanced
 
-Configuration and secrets management in containerized environments. Shows how to handle sensitive data and environment-specific configurations securely.
+Secure configuration and secrets handling in Docker. Demonstrates environment variables, file-based secrets, multi-environment setup, and security best practices.
 
 **What you'll learn:**
-- Secrets management
-- Environment variables
-- Secure configuration handling
+- Environment-specific configurations
+- Docker secrets with mounted files
+- Secure secrets handling
+- Multi-environment setup (dev/prod)
 
 ---
 

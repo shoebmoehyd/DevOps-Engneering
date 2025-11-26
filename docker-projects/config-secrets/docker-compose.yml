@@ -1,0 +1,12 @@
+services:
+  config-app:
+    build: ./app
+    container_name: config-secrets-app
+    env_file:
+      - .env.production   # use dev env for now
+    environment:
+      SECRET_FILE: /run/secrets/app_secret
+    ports:
+      - "4000:4000"
+    volumes:
+      - ./secrets/app_secret.txt:/run/secrets/app_secret:ro

@@ -1,0 +1,14 @@
+# Node stuff
+node_modules
+npm-debug.log
+
+# Env files (never commit real secrets)
+.env
+.env.*
+!.env.example
+
+# Secrets directory
+secrets/
+
+# Docker
+*.log

@@ -42,7 +42,7 @@ Backend application built with Spring Boot and containerized for seamless deploy
 ---
 
 ### 4. 🌐 **tomcat-server**
-**Status:** 📝 Planned | **Level:** Intermediate
+**Status:** ✅ Completed | **Level:** Intermediate
 
 Apache Tomcat application server running in Docker. Demonstrates how to deploy and manage Java web applications in containers.
 

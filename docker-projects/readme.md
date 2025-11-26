@@ -92,15 +92,16 @@ Secure configuration and secrets handling in Docker. Demonstrates environment va
 
 ---
 
-### 8. 🔀 **ingress-controller**
-**Status:** 📝 Planned | **Level:** Advanced
+### 8. 🔀 **nginx-reverse-proxy**
+**Status:** ✅ Completed | **Level:** Advanced
 
-Ingress controller setup for managing external access to services. Demonstrates traffic routing and load balancing in containerized applications.
+Nginx reverse proxy routing traffic to multiple containerized applications. Demonstrates path-based routing, upstream configuration, and proxy headers.
 
 **What you'll learn:**
-- Ingress configuration
-- Traffic routing
-- Load balancing strategies
+- Nginx reverse proxy configuration
+- Path-based routing (/users, /products)
+- Upstream server configuration
+- Proxy headers and service isolation
 
 ---
 

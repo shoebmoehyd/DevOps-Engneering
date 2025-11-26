@@ -105,46 +105,35 @@ Nginx reverse proxy routing traffic to multiple containerized applications. Demo
 
 ---
 
-### 9. ☸️ **k8s-manifests**
-**Status:** 📝 Planned | **Level:** Advanced
-
-Kubernetes deployment manifests and configurations. Bridges Docker containers to Kubernetes orchestration with deployment, service, and ingress configurations.
-
-**What you'll learn:**
-- Kubernetes basics
-- Deployment strategies
-- Service configurations
-
----
-
-### 10. 📊 **monitoring-stack**
-**Status:** 📝 Planned | **Level:** Advanced
-
-Complete monitoring solution using containerized tools. Implements observability with metrics collection, visualization, and alerting.
-
-**What you'll learn:**
-- Prometheus setup
-- Grafana dashboards
-- Alerting configuration
-
----
-
 ## 🎯 Getting Started
 
 Each project folder contains its own README with specific instructions, prerequisites, and implementation details. Navigate to any project to explore the code, configuration files, and documentation.
 
 **Recommended Learning Path:**
-1. Start with **react-frontend** and **mysql-db** (Beginner)
-2. Move to **springboot-backend**, **tomcat-server**, and **docker-images** (Intermediate)
-3. Advance to **multi-container-webapp**, **config-secrets**, **ingress-controller**, **k8s-manifests**, and **monitoring-stack** (Advanced)
+1. **Beginner:** react-frontend, mysql-db, tomcat-server
+2. **Intermediate:** springboot-backend, docker-images
+3. **Advanced:** multi-container-webapp, config-secrets, nginx-reverse-proxy
 
 ## 💡 Purpose
 
-These projects provide practical experience with Docker containerization technology, from basic concepts to advanced deployment patterns used in production environments.
+These 8 projects provide comprehensive hands-on experience with Docker containerization technology, covering all essential concepts and best practices used in production environments. Additional topics like CI/CD integration, Kubernetes, and monitoring are covered in separate project collections.
+
+---
+
+## 📊 Collection Status
+
+**✅ All 8 Docker Projects Completed!**
+
+Topics Covered:
+- ✅ Containerization (frontend, backend, database, app servers)
+- ✅ Multi-stage builds & image optimization
+- ✅ Docker Compose & multi-container orchestration
+- ✅ Security best practices & secrets management
+- ✅ Reverse proxy & traffic routing
+- ✅ Volumes, networking, and configuration management
 
 ---
 
 **Legend:**
 - ✅ Completed
 - 🔄 In Progress
-- 📝 Planned

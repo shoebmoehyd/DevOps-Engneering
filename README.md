@@ -15,7 +15,7 @@ This repository contains real-world projects and implementations covering essent
 | ☁️ **Cloud Projects (AWS)** | EC2, S3, VPC, IAM, and cloud infrastructure basics | 📝 Planned |
 | 🏗️ **Terraform Projects** | Infrastructure as Code (IaC) for cloud resources | 📝 Planned |
 | 📋 **Ansible Projects** | Configuration management and automation | 📝 Planned |
-| ☸️ **Kubernetes Projects** | Container orchestration, deployments, and cluster management | 📝 Planned |
+| ☸️ **Kubernetes Projects** | Container orchestration, deployments, and cluster management | ✅ Completed |
 | 🔧 **Jenkins Projects** | Continuous integration and delivery automation | 📝 Planned |
 | 🔄 **CI/CD Projects** | Modern pipelines with GitHub Actions and GitLab CI | 📝 Planned |
 | 📊 **Prometheus & Grafana** | Monitoring, metrics, and observability | 📝 Planned |

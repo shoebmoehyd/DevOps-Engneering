@@ -5,7 +5,7 @@ A comprehensive hands-on collection of Kubernetes projects covering container or
 ## 📋 Projects Overview
 
 ### 1. 🎈 **basic-pod-deployment**
-**Status:** 📝 Planned | **Level:** Beginner
+**Status:** ✅ Completed | **Level:** Beginner
 
 Introduction to Kubernetes pods - the smallest deployable units. Learn pod lifecycle, kubectl basics, labels, and annotations.
 
@@ -19,7 +19,7 @@ Introduction to Kubernetes pods - the smallest deployable units. Learn pod lifec
 ---
 
 ### 2. 📦 **deployments-replicasets**
-**Status:** 📝 Planned | **Level:** Beginner
+**Status:** ✅ Completed | **Level:** Beginner
 
 Deployments for scalable and reliable applications. Master rolling updates, rollbacks, and replica management.
 
@@ -33,7 +33,7 @@ Deployments for scalable and reliable applications. Master rolling updates, roll
 ---
 
 ### 3. 🌐 **services-networking**
-**Status:** 📝 Planned | **Level:** Beginner
+**Status:** ✅ Completed | **Level:** Beginner
 
 Service types and networking in Kubernetes. Expose applications using ClusterIP, NodePort, and LoadBalancer services.
 
@@ -47,7 +47,7 @@ Service types and networking in Kubernetes. Expose applications using ClusterIP,
 ---
 
 ### 4. 🔧 **configmaps-secrets**
-**Status:** 📝 Planned | **Level:** Intermediate
+**Status:** ✅ Completed | **Level:** Intermediate
 
 Configuration and secrets management in Kubernetes. Decouple configuration from application code securely.
 
@@ -61,7 +61,7 @@ Configuration and secrets management in Kubernetes. Decouple configuration from 
 ---
 
 ### 5. 💾 **persistent-storage**
-**Status:** 📝 Planned | **Level:** Intermediate
+**Status:** ✅ Completed | **Level:** Intermediate
 
 Persistent storage in Kubernetes. Work with PersistentVolumes, PersistentVolumeClaims, and StatefulSets for stateful applications.
 
@@ -75,7 +75,7 @@ Persistent storage in Kubernetes. Work with PersistentVolumes, PersistentVolumeC
 ---
 
 ### 6. 🚀 **multi-tier-application**
-**Status:** 📝 Planned | **Level:** Intermediate
+**Status:** ✅ Completed | **Level:** Intermediate
 
 Full-stack application deployment with frontend, backend, and database. Demonstrates service communication and namespace isolation.
 
@@ -89,7 +89,7 @@ Full-stack application deployment with frontend, backend, and database. Demonstr
 ---
 
 ### 7. 🔀 **ingress-load-balancing**
-**Status:** 📝 Planned | **Level:** Advanced
+**Status:** ✅ Completed | **Level:** Advanced
 
 Ingress controllers for HTTP/HTTPS routing. Implement path-based and host-based routing with SSL/TLS termination.
 
@@ -103,7 +103,7 @@ Ingress controllers for HTTP/HTTPS routing. Implement path-based and host-based 
 ---
 
 ### 8. ❤️ **health-checks-autoscaling**
-**Status:** 📝 Planned | **Level:** Advanced
+**Status:** ✅ Completed | **Level:** Advanced
 
 Production-ready deployments with health checks and autoscaling. Implement liveness/readiness probes and Horizontal Pod Autoscaler.
 

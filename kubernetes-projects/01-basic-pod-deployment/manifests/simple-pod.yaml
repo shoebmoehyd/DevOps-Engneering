@@ -1,0 +1,26 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: simple-pod
+  labels:
+    app: myapp
+    env: development
+    tier: frontend
+    version: v1.0
+  annotations:
+    description: "A simple pod demonstrating labels and annotations"
+    author: "DevOps Learning"
+    created-date: "2025-12-02"
+spec:
+  containers:
+  - name: nginx-container
+    image: nginx:1.25-alpine
+    ports:
+    - containerPort: 80
+      name: http
+      protocol: TCP
+    env:
+    - name: ENVIRONMENT
+      value: "development"
+    - name: APP_VERSION
+      value: "1.0.0"

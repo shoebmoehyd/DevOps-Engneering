@@ -1,0 +1,18 @@
+# Configuration values
+frontend:
+  replicas: 2
+  image: nginx:alpine
+
+backend:
+  replicas: 2
+  image: nginx:alpine
+
+database:
+  replicas: 1
+  image: mysql:8.0
+  password: "mypassword"
+  storageSize: 1Gi
+
+ingress:
+  enabled: true
+  host: myapp.local

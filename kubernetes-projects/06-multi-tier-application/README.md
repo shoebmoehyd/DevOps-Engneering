@@ -1,6 +1,6 @@
 # 🏗️ Project 6: Multi-tier Application
 
-**Level:** Intermediate | **Status:** 🚧 In Progress
+**Level:** Intermediate | **Status:** ✅ Complete
 
 ## 📚 What You'll Learn
 

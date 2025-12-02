@@ -1,0 +1,5 @@
+apiVersion: v2
+name: myapp
+description: Multi-tier application with Ingress
+version: 1.0.0
+appVersion: "1.0"

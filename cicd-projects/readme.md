@@ -20,7 +20,7 @@ A comprehensive hands-on collection of CI/CD projects where you'll build **REAL 
 ## 📋 Projects Overview
 
 ### 1. 🐳 **Docker Registry Explorer**
-**Status:** 🚧 In Progress | **Level:** Beginner
+**Status:** ✅ Complete | **Level:** Beginner
 
 Build a web UI to explore Docker Hub repositories, tags, and image details. Learn CI/CD basics while creating a tool to visualize your Docker images.
 

@@ -59,12 +59,16 @@
 <body>
     <div class="container">
         <h1>🐳 Docker Registry Explorer</h1>
-        <p>Enter a Docker Hub username to explore their repositories:</p>
+        <p>Enter a Docker Hub username to explore their repositories. Try 'library' for official images or 'shoebmoehyd' to see example repos!</p>
         
         <input type="text" id="username" placeholder="Enter Docker Hub username" value="library">
         <button onclick="fetchRepos()">Fetch Repositories</button>
         
         <div id="results"></div>
+        
+        <div style="margin-top: 30px; padding-top: 20px; border-top: 1px solid #ddd; text-align: center; color: #888; font-size: 12px;">
+            <p>🚀 Auto-deployed via CI/CD | Version: 2.0 | Built with Flask + Docker + GitHub Actions</p>
+        </div>
     </div>
 
     <script>

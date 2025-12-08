@@ -21,7 +21,7 @@ jobs:
     - name: Build and push
       uses: docker/build-push-action@v4
       with:
-        context: ./app
+        context: ./cicd-projects/01-docker-github-actions/app
         push: true
         tags: |
           ${{ secrets.DOCKERHUB_USERNAME }}/docker-registry-explorer:latest

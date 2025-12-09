@@ -38,13 +38,7 @@ jobs:
       env:
         NODE_ENV: test
 
-    - name: Check Docker Hub secrets (push only)
-      if: github.event_name == 'push' && github.ref == 'refs/heads/main'
-      run: |
-        if [ -z "${{ secrets.DOCKERHUB_USERNAME }}" ] || [ -z "${{ secrets.DOCKERHUB_TOKEN }}" ]; then
-          echo "::error::Missing Docker Hub secrets: DOCKERHUB_USERNAME / DOCKERHUB_TOKEN"
-          exit 1
-        fi
+    # (secret check removed at user's request)
 
     - name: 🔐 Login to Docker Hub
       if: github.event_name == 'push' && github.ref == 'refs/heads/main'

@@ -1,0 +1,71 @@
+name: K8s Dashboard - Deploy
+
+on:
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: 'Environment to deploy to'
+        required: true
+        default: 'minikube'
+        type: choice
+        options:
+          - minikube
+          - production
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: 📥 Checkout code
+      uses: actions/checkout@v4
+
+    - name: 📝 Update deployment manifests
+      working-directory: cicd-projects/02-k8s-health-dashboard/k8s
+      run: |
+        echo "🔄 Updating image references to Docker Hub..."
+        
+        # Update backend deployment
+        sed -i 's|image: k8s-dashboard-backend:v1|image: ${{ secrets.DOCKERHUB_USERNAME }}/k8s-dashboard-backend:latest|g' backend-deployment.yaml
+        sed -i 's|imagePullPolicy: Never|imagePullPolicy: Always|g' backend-deployment.yaml
+        
+        # Update frontend deployment
+        sed -i 's|image: k8s-dashboard-frontend:v1|image: ${{ secrets.DOCKERHUB_USERNAME }}/k8s-dashboard-frontend:latest|g' frontend-deployment.yaml
+        sed -i 's|imagePullPolicy: Never|imagePullPolicy: Always|g' frontend-deployment.yaml
+        
+        echo "✅ Manifests updated!"
+
+    - name: 📋 Display deployment manifests
+      working-directory: cicd-projects/02-k8s-health-dashboard/k8s
+      run: |
+        echo "📄 Backend Deployment:"
+        cat backend-deployment.yaml
+        echo ""
+        echo "📄 Frontend Deployment:"
+        cat frontend-deployment.yaml
+
+    - name: 💡 Deployment instructions
+      run: |
+        echo "=========================================="
+        echo "🚀 Ready to deploy to ${{ inputs.environment }}!"
+        echo "=========================================="
+        echo ""
+        echo "To deploy, run these commands on your machine:"
+        echo ""
+        echo "# Pull latest images"
+        echo "docker pull ${{ secrets.DOCKERHUB_USERNAME }}/k8s-dashboard-backend:latest"
+        echo "docker pull ${{ secrets.DOCKERHUB_USERNAME }}/k8s-dashboard-frontend:latest"
+        echo ""
+        echo "# Apply updated manifests"
+        echo "kubectl apply -f cicd-projects/02-k8s-health-dashboard/k8s/"
+        echo ""
+        echo "# Restart deployments"
+        echo "kubectl rollout restart deployment/k8s-dashboard-backend"
+        echo "kubectl rollout restart deployment/k8s-dashboard-frontend"
+        echo ""
+        echo "# Check status"
+        echo "kubectl get pods -l app=k8s-dashboard"
+        echo ""
+        echo "=========================================="
+        echo "✅ Images are available on Docker Hub!"
+        echo "=========================================="

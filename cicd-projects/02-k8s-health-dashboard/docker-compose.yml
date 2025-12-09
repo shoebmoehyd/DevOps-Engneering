@@ -1,0 +1,36 @@
+version: '3.8'
+
+services:
+  # Backend API service
+  backend:
+    build:
+      context: ./backend
+      dockerfile: Dockerfile
+    container_name: k8s-dashboard-backend
+    ports:
+      - "3000:3000"
+    environment:
+      - NODE_ENV=production
+      - PORT=3000
+    volumes:
+      # Mount kubeconfig so backend can connect to Kubernetes
+      - ~/.kube/config:/root/.kube/config:ro
+      # Mount minikube directory for certificates
+      - ~/.minikube:/root/.minikube:ro
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    network_mode: "host"
+    restart: unless-stopped
+
+  # Frontend service (React + Nginx)
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: k8s-dashboard-frontend
+    ports:
+      - "80:80"
+    depends_on:
+      - backend
+    network_mode: "host"
+    restart: unless-stopped

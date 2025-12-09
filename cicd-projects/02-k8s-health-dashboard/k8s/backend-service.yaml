@@ -1,0 +1,18 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: backend-service
+  namespace: default
+  labels:
+    app: k8s-dashboard
+    component: backend
+spec:
+  type: ClusterIP
+  selector:
+    app: k8s-dashboard
+    component: backend
+  ports:
+    - port: 3000
+      targetPort: 3000
+      protocol: TCP
+      name: http

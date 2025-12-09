@@ -1,0 +1,55 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: k8s-dashboard-backend
+  namespace: default
+  labels:
+    app: k8s-dashboard
+    component: backend
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: k8s-dashboard
+      component: backend
+  template:
+    metadata:
+      labels:
+        app: k8s-dashboard
+        component: backend
+    spec:
+      serviceAccountName: dashboard-sa
+      containers:
+        - name: backend
+          image: k8s-dashboard-backend:v1
+          imagePullPolicy: Never  # Use local image from Minikube
+          ports:
+            - containerPort: 3000
+              name: http
+          env:
+            - name: NODE_ENV
+              valueFrom:
+                configMapKeyRef:
+                  name: dashboard-config
+                  key: NODE_ENV
+            - name: PORT
+              value: "3000"
+          resources:
+            requests:
+              memory: "128Mi"
+              cpu: "100m"
+            limits:
+              memory: "256Mi"
+              cpu: "200m"
+          livenessProbe:
+            httpGet:
+              path: /api/health
+              port: 3000
+            initialDelaySeconds: 10
+            periodSeconds: 30
+          readinessProbe:
+            httpGet:
+              path: /api/health
+              port: 3000
+            initialDelaySeconds: 5
+            periodSeconds: 10

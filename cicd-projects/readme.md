@@ -42,25 +42,35 @@ Build a web UI to explore Docker Hub repositories, tags, and image details. Lear
 ---
 
 ### 2. ☸️ **K8s Health Dashboard**
-**Status:** 📝 Planned | **Level:** Intermediate
+**Status:** ✅ Complete | **Level:** Intermediate
 
 Build a real-time Kubernetes cluster viewer that shows pods, deployments, services, and health status with color-coded indicators.
 
 **What you'll build:**
-- Node.js + React dashboard
-- Kubernetes API integration
-- Real-time pod status viewer
-- Resource usage display (CPU/memory)
-- Color-coded health indicators
-- Auto-deploy to K8s via CI/CD
+- Node.js Express backend with @kubernetes/client-node API
+- React (Vite) frontend with real-time data updates
+- Kubernetes API integration (pods, nodes, deployments)
+- Color-coded health status indicators
+- Auto-refresh dashboard (10-second intervals)
+- Complete K8s deployment manifests for Minikube
+- GitHub Actions CI/CD pipeline (build, test, deploy)
 
 **What you'll learn:**
-- K8s API programming
-- Real-time data updates
-- React frontend development
-- Automated K8s deployments
-- Image version management
-- kubectl automation in CI/CD
+- K8s API programming with Node.js client
+- Real-time data fetching and state management in React
+- Frontend-backend integration patterns
+- Containerized app deployment to K8s
+- Automated testing (Jest + Supertest) in CI
+- Image versioning and automated deployments
+- kubectl port-forwarding for local testing
+
+**Build Details:**
+- ✅ Backend: Express server (port 3000) that queries K8s API
+- ✅ Frontend: React + Nginx production build
+- ✅ K8s: Deployments, Services, ServiceAccount, RBAC configured
+- ✅ CI/CD: GitHub Actions for automated builds, tests, and K8s updates
+- ✅ Testing: Jest tests with ESM support, integrated in CI pipeline
+- 🔧 Local Development: Port-forward for frontend (8080) and backend (3000)
 
 ---
 

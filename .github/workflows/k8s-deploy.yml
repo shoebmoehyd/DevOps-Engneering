@@ -20,6 +20,13 @@ jobs:
     - name: 📥 Checkout code
       uses: actions/checkout@v4
 
+    - name: Check Docker Hub secrets (required for manifest updates)
+      run: |
+        if [ -z "${{ secrets.DOCKERHUB_USERNAME }}" ] || [ -z "${{ secrets.DOCKERHUB_TOKEN }}" ]; then
+          echo "::error::Missing Docker Hub secrets: DOCKERHUB_USERNAME / DOCKERHUB_TOKEN"
+          exit 1
+        fi
+
     - name: 📝 Update deployment manifests
       working-directory: cicd-projects/02-k8s-health-dashboard/k8s
       run: |
